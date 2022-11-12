@@ -1,0 +1,115 @@
+name: "🪲Bug Report"
+description: Help us find and fix bugs. Please use other issue reports if they are more specific about your issue.
+title: "<Nation(s) Affected> - <Summary of Bug>"
+labels: [
+  "Bug"
+]
+body:
+  - type: dropdown
+    id: os
+    attributes:
+      label: "OS"
+      description:
+      multiple: false
+      options:
+        - Windows 7
+        - Windows 8/8.1
+        - Windows 10
+        - Windows 11
+        - Linux
+        - Mac
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: expansions-dlc
+    attributes:
+      label: "Any Expansions?"
+      description: Which expansions do you have?
+      multiple: true
+      options:
+        - Nothing
+        - All of them
+        - Together for Victory
+        - Death or Dishonor
+        - Waking the Tiger
+        - Man the Guns
+        - La Résistance
+        - Battle For The Bosporus
+        - No Step Back
+        - By Blood Alone
+    validations:
+      required: true
+  - type: dropdown
+    id: steam_usage
+    attributes:
+      label: "Are you using Steam?"
+      description: Are you playing using steam?
+      multiple: false
+      options:
+        - Yes i am
+        - No i'm not
+    validations:
+      required: true
+  - type: dropdown
+    id: multiplayer
+    attributes:
+      label: "Were you playing in multiplayer?"
+      description:
+      multiple: false
+      options:
+        - Yes i was
+        - No i wasn't
+    validations:
+      required: true
+  - type: input
+    id: hoi4-version
+    attributes:
+      label: "Hoi4 Version"
+      description: Please enter the Hoi4 version you are using
+    validations:
+      required: true
+  - type: input
+    id: dh-version
+    attributes:
+      label: "DH Version"
+      description: Please enter the DH version you are using
+    validations:
+      required: true
+  - type: input
+    id: other-mods
+    attributes:
+      label: "Other Mods"
+      description: List any other mods used
+    validations:
+      required: false
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      description: Please enter an explicit description of your issue
+      placeholder: Explanation of the issue...
+      render: bash
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: "Screenshots/Video"
+      description: If applicable, add screenshots/video to help explain your problem.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Logs"
+      description: Please add any relevant error log
+    validations:
+      required: false
+  - type: textarea
+    id: savegame
+    attributes:
+      label: "Savegame"
+      description: Please upload the savegame (Zip it first)
+    validations:
+      required: false

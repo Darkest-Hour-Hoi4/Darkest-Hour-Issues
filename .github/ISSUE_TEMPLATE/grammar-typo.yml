@@ -1,0 +1,44 @@
+name: "📝Grammar/Typo"
+description: For minor text adjustments. For missing text the 'Bug' label should be used instead
+title: "<Nation(s) Affected> - <Summary of Typo>"
+labels: [
+  "Grammar"
+]
+body:
+  - type: input
+    id: hoi4-version
+    attributes:
+      label: "Hoi4 Version"
+      description: Please enter the Hoi4 version you are using
+    validations:
+      required: true
+  - type: input
+    id: dh-version
+    attributes:
+      label: "DH Version"
+      description: Please enter the DH version you are using
+    validations:
+      required: true
+  - type: input
+    id: other-mods
+    attributes:
+      label: "Other Mods"
+      description: List any other mods used
+    validations:
+      required: false
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      description: Please enter an explicit description of your issue
+      placeholder: Explanation of the issue...
+      render: bash
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: "Screenshots/Video"
+      description: If applicable, add screenshots/video to help explain your problem.
+    validations:
+      required: true

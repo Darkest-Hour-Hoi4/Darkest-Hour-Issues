@@ -1,0 +1,55 @@
+name: "💡Suggestion"
+description: Suggest a specific and actionable change about existing content. These suggestions should be under a paragraph in length
+title: "<Nation(s) Affected> - <Summary of Suggestion>"
+labels: [
+  "Suggestion"
+]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Disclaimer!
+        
+        While we appreciate all members of our community, it is critical that only serious suggestions are posted, and that suggestions are not outrageous. As a result, we will close posts that include anything unreasonable, such as: in-game mechanics that will be difficult to use and implement or that may be perceived as being very similar to another mod, unrealistic alt-history content, or unspecific suggestions (for example, saying that an entire country should be overhauled).
+        
+        We want to make sure that we're providing the best mod and community experience for all users, and by keeping this disclaimer in mind, we'll be able to keep improving. This is not meant to stifle your ideas or your enthusiasm for the mod, but suggestions that do not adhere to the template will be closed. However, if you want to get more involved, please visit our Discord server and subreddit!
+        #
+  - type: input
+    id: hoi4-version
+    attributes:
+      label: "Hoi4 Version"
+      description: Please enter the Hoi4 version you are using
+    validations:
+      required: true
+  - type: input
+    id: dh-version
+    attributes:
+      label: "DH Version"
+      description: Please enter the DH version you are using
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      description: Describe the specific change you would like
+      placeholder:
+      render: bash
+    validations:
+      required: true
+  - type: textarea
+    id: reasoning
+    attributes:
+      label: "Reasoning"
+      description: Explain the reasoning behind this actionable change
+      placeholder:
+    validations:
+      required: true
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: "Additional context"
+      description: Additional context or comments
+      placeholder:
+    validations:
+      required: false
