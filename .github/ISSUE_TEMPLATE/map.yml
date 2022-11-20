@@ -110,4 +110,4 @@ body:
       label: "Screenshots/Video"
       description: If applicable, add screenshots/video to help explain your problem.
     validations:
-      required: true
+      required: false
