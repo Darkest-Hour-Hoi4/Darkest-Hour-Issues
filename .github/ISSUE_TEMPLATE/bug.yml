@@ -72,8 +72,8 @@ body:
   - type: input
     id: dh-version
     attributes:
-      label: "DH Version"
-      description: Please enter the DH version you are using
+      label: "DH Version (Current one is 1.0.0-hotfix-2)"
+      description: Please enter the DH version you are using (you can find it at the bottom left of the menu)
     validations:
       required: true
   - type: input
